@@ -1,0 +1,17 @@
+[
+    {
+        "database": "flights",
+        "collection": "booking",
+        "count": 200000,
+        "content": {
+            "booking_no": { "type": "string", "unique": true, "minLength": 6, "maxLength": 6 },
+            "first_name": { "type": "enum", "values":["Ali","Denis","Shree"], "randomOrder": true, "nullPercentage": 0 },
+            "last_name": { "type": "faker", "method": "LastName" },
+            "dob": { "type": "date" },
+            "email": { "type": "faker", "method": "Email" },
+            "origin": { "type": "string", "minLength": 8, "maxLength": 100 },
+            "destination": {"type": "string", "minLength": 8, "maxLength": 100 },
+            "origin": {"type": "constant", "constVal": "Nice", "nullPercentage": 0}
+        }
+    }
+]
