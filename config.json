@@ -51,6 +51,14 @@
                 "constVal": "Paris",
                 "nullPercentage": 0
             }
-        }
+        },
+        "indexes": [
+            {
+                "name": "firstName",
+                "key": {
+                    "first_name": 1
+                }
+            }
+        ]
     }
 ]
