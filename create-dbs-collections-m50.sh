@@ -26,6 +26,6 @@
 #./mgodatagen -f config-bookings-100MS0I1.json --append --uri mongodb+srv://aiops-team:RESPInnovation@flights-m50.5jvmg.mongodb.net
 
 # Same with Sharding: S1
-./mgodatagen -f config-bookings-100KS1I1.json --append --uri mongodb+srv://aiops-team:RESPInnovation@flights-m50.5jvmg.mongodb.net
-./mgodatagen -f config-bookings-1MS1I1.json --append --uri mongodb+srv://aiops-team:RESPInnovation@flights-m50.5jvmg.mongodb.net
-./mgodatagen -f config-bookings-10MS1I1.json --append --uri mongodb+srv://aiops-team:RESPInnovation@flights-m50.5jvmg.mongodb.net
+#./mgodatagen -f config-bookings-100KS1I1.json --uri mongodb+srv://aiops-team:RESPInnovation@flights-m50.5jvmg.mongodb.net
+#./mgodatagen -f config-bookings-1MS1I1.json --uri mongodb+srv://aiops-team:RESPInnovation@flights-m50.5jvmg.mongodb.net
+#./mgodatagen -f config-bookings-10MS1I1.json --uri mongodb+srv://aiops-team:RESPInnovation@flights-m50.5jvmg.mongodb.net
