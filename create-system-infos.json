@@ -1,0 +1,30 @@
+
+db.clusterInfos.insertOne(
+        {
+            "cluster": "flights-m10",
+            "cloud-provier": "Azure",
+            "region": "zone1-netherlands",
+            "tier": "M10",
+            "ram": "2G", 
+            "vcpu": 1,
+            "storage": "64G",
+            "iops": 240,
+            "network": 1500,
+            "mongo-version": "5.0",
+            "shard": 0,
+            "priceDollarPerHour": 0.12
+        }
+)
+
+mongosh "mongodb+srv://flights-m10.5jvmg.mongodb.net" --username aiops-team
+use system
+db.clusterInfos.insertOne( { "cluster": "flights-m10", "cloud-provier": "Azure", "region": "zone1-netherlands", "tier": "M10", "ram": "2G", "vcpu": 1,  "storage": "64G", "iops": 240, "network": 1500, "mongo-version": "5.0", "shard": 0, "priceDollarPerHour": 0.12 })
+
+db.clusterInfos.insertOne( { "cluster": "flights-m20", "cloud-provier": "Azure", "region": "zone1-netherlands", "tier": "M20", "ram": "4G", "vcpu": 2,  "storage": "64G", "iops": 240, "network": 3000, "mongo-version": "5.0", "shard": 0, "priceDollarPerHour": 0.28 })
+
+db.clusterInfos.insertOne( { "cluster": "flights-m50", "cloud-provier": "Azure", "region": "zone1-netherlands", "tier": "M50", "ram": "32G", "vcpu": 8,  "storage": "128G", "iops": 500, "network": 16000, "mongo-version": "5.0", "shard": 5, "priceDollarPerHour": 5.84 })
+
+db.clusterInfos.insertOne( { "cluster": "flights-m80", "cloud-provier": "Azure", "region": "zone1-paris", "tier": "M80", "ram": "128G", "vcpu": 32,  "storage": "256G", "iops": 1100, "network": 64000, "mongo-version": "5.0", "shard": 2, "priceDollarPerHour": 19.73 })
+
+db.clusterInfos.insertOne( { "cluster": "flights-m200", "cloud-provier": "Azure", "region": "zone1-frankfurt", "tier": "M200", "ram": "256G", "vcpu": 64,  "storage": "256G", "iops": 1100, "network": 128000, "mongo-version": "5.0", "shard": 2, "priceDollarPerHour": 32.85 })
+

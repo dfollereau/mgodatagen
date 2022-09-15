@@ -1,8 +1,8 @@
 [
     {
-        "database": "fltsharded",
-        "collection": "bookings",
-        "count": 20000000,
+        "database": "flights",
+        "collection": "bookings1MS0I1",
+        "count": 1000000,
         "content": {
             "booking_no": {
                 "type": "string",
@@ -16,7 +16,8 @@
                     "Ali",
                     "Denis",
                     "Shree",
-                    "Xavier"
+                    "Xavier",
+                    "Stephane"
                 ],
                 "randomOrder": true,
                 "nullPercentage": 0
@@ -53,13 +54,7 @@
                 "nullPercentage": 0
             }
         },
-    "shardConfig": {
-        "shardCollection": "fltsharded.bookings",
-        "key": {
-            "first_name": 1
-        }
-    },
-    "indexes": [
+        "indexes": [
             {
                 "name": "firstName",
                 "key": {

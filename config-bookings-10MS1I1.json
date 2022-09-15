@@ -1,0 +1,131 @@
+[
+    {
+        "database": "flights",
+        "collection": "bookings10MS1I1",
+        "count": 10000000,
+        "content": {
+            "booking_no": {
+                "type": "string",
+                "unique": true,
+                "minLength": 6,
+                "maxLength": 6
+            },
+            "first_name": {
+                "type": "enum",
+                "values": [
+                    "Ali",
+                    "Denis",
+                    "Denis1",
+                    "Denis2",
+                    "Denis3",
+                    "Denis4",
+                    "Denis5",
+                    "Denis6",
+                    "Denis7",
+                    "Denis8",
+                    "Denis9",
+                    "Denis10",
+                    "Denis11",
+                    "Denis12",
+                    "Denis13",
+                    "Denis14",
+                    "Denis15",
+                    "Denis16",
+                    "Denis17",
+                    "Denis18",
+                    "Denis19",
+                    "Denis20",
+                    "Denis21",
+                    "Denis22",
+                    "Denis23",
+                    "Denis24",
+                    "Denis25",
+                    "Denis26",
+                    "Denis27",
+                    "Denis28",
+                    "Denis29",
+                    "Denis30",
+                    "Denis31",
+                    "Denis32",
+                    "Denis33",
+                    "Denis34",
+                    "Denis35",
+                    "Denis36",
+                    "Denis37",
+                    "Denis38",
+                    "Denis39",
+                    "Denis40",
+                    "Denis41",
+                    "Denis42",
+                    "Denis43",
+                    "Denis44",
+                    "Denis45",
+                    "Denis46",
+                    "Denis47",
+                    "Denis48",
+                    "Denis49",
+                    "Denis50",
+                    "Denis51",
+                    "Denis52",
+                    "Denis53",
+                    "Denis54",
+                    "Denis55",
+                    "Denis56",
+                    "Denis57",
+                    "Denis58",
+                    "Denis59",
+                    "Denis60",
+                    "Shree",
+                    "Xavier"
+                ],
+                "randomOrder": true,
+                "nullPercentage": 0
+            },
+            "last_name": {
+                "type": "faker",
+                "method": "LastName"
+            },
+            "dob": {
+                "type": "date"
+            },
+            "email": {
+                "type": "faker",
+                "method": "Email"
+            },
+            "origin": {
+                "type": "string",
+                "minLength": 8,
+                "maxLength": 100
+            },
+            "destination": {
+                "type": "string",
+                "minLength": 8,
+                "maxLength": 100
+            },
+            "origin": {
+                "type": "constant",
+                "constVal": "Nice",
+                "nullPercentage": 0
+            },
+            "destination": {
+                "type": "constant",
+                "constVal": "Paris",
+                "nullPercentage": 0
+            }
+        },
+        "shardConfig": {
+            "shardCollection": "flights.bookings10MS1I1",
+            "key": {
+                "first_name": 1
+            }
+        },
+        "indexes": [
+                {
+                    "name": "firstName",
+                    "key": {
+                        "first_name": 1
+                    }
+                }
+            ]
+        }
+    ]

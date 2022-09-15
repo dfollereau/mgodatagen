@@ -1,8 +1,8 @@
 [
     {
-        "database": "fltsharded",
-        "collection": "bookings",
-        "count": 20000000,
+        "database": "flights",
+        "collection": "bookings100MS0I0",
+        "count": 100000000,
         "content": {
             "booking_no": {
                 "type": "string",
@@ -52,20 +52,6 @@
                 "constVal": "Paris",
                 "nullPercentage": 0
             }
-        },
-    "shardConfig": {
-        "shardCollection": "fltsharded.bookings",
-        "key": {
-            "first_name": 1
         }
-    },
-    "indexes": [
-            {
-                "name": "firstName",
-                "key": {
-                    "first_name": 1
-                }
-            }
-        ]
     }
 ]
